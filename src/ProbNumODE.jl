@@ -35,7 +35,6 @@ include("steprules.jl")
 include("priors.jl")
 # include("measurement_model.jl")
 include("sigmas.jl")
-include("error_estimation.jl")
 
 include("integrator_type.jl")
 export EKF0, EKF1, ODEFilter
