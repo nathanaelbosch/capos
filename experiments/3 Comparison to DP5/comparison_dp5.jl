@@ -6,6 +6,8 @@ using LinearAlgebra
 using StatsPlots
 using LaTeXStrings
 
+FILEDIR = dirname(@__FILE__)
+
 for (prob, name) in [
     (remake_prob_with_jac(lotka_volterra()), "lotkavolterra"),
     (remake_prob_with_jac(fitzhugh_nagumo_iip()), "fitzhughnagumo"),
@@ -97,5 +99,5 @@ for (prob, name) in [
     plot!(p, xrange, x -> x^(-6)*(x0^6 * y0), color=:black, linestyle=:dot, label="")
 
     plot!(p, xlabel=L"\#evaluations", ylabel="L2 error")
-    savefig(p, "dp5_comparison_$(name).png")
+    savefig(p, joinpath(FILEDIR, "dp5_comparison_$(name).png"))
 end

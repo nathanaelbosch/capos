@@ -6,6 +6,8 @@ using Distributions
 using StatsPlots
 pyplot()
 
+FILEDIR = dirname(@__FILE__)
+
 # Problem and reference solution
 prob = remake_prob_with_jac(lotka_volterra())
 appxsol = solve(remake(prob, u0=big.(prob.u0)), abstol=1e-30, reltol=1e-30)
@@ -28,4 +30,6 @@ for i in 1:size(sp)[3]
 end
 plot!(sol.t, ProbNumODE.stack(errors), color=:black, label="")
 plot!(p, size=(400, 250))
-savefig("sampled_errors_ekf1.png")
+savefig(joinpath(FILEDIR, "sampled_errors_ekf1.png"))
+
+println("Plot saved to $FILEDIR")

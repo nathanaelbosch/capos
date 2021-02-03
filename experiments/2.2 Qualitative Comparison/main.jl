@@ -4,6 +4,7 @@ using Plots
 using LinearAlgebra
 using LaTeXStrings
 
+FILEDIR = dirname(@__FILE__)
 
 function makeplot(sol, n=10)
     errs = sol.u - appxsol.(sol.t)
@@ -36,14 +37,16 @@ appxsol = solve(remake(prob, u0=big.(prob.u0)), abstol=1e-30, reltol=1e-30);
 
 sol = solve(prob, EKF1(), q=3, sigmarule=:dynamic, smooth=true, abstol=1e-10, reltol=1e-7)
 p = makeplot(sol, 0);
-savefig("sigmas-tv-eks1_fitzhughnagumo.png")
+savefig(joinpath(FILEDIR, "sigmas-tv-eks1_fitzhughnagumo.png"))
 
 
 sol = solve(prob, EKF0(), q=3, sigmarule=:dynamicMV, smooth=true, abstol=1e-10, reltol=1e-7)
 p = makeplot(sol, 0);
-savefig("sigmas-tvmv-eks0_fitzhughnagumo.png")
+savefig(joinpath(FILEDIR, "sigmas-tvmv-eks0_fitzhughnagumo.png"))
 
 
 sol = solve(prob, EKF0(), q=3, sigmarule=:dynamic, smooth=true, abstol=1e-10, reltol=1e-7)
 p = makeplot(sol, 0);
-savefig("sigmas-tv-eks0_fitzhughnagumo_nosamples.png")
+savefig(joinpath(FILEDIR, "sigmas-tv-eks0_fitzhughnagumo_nosamples.png"))
+
+println("Plots saved to $FILEDIR")
