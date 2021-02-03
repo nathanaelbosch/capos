@@ -32,7 +32,7 @@ function DiffEqBase.__init(prob::DiffEqBase.AbstractODEProblem, alg::ODEFilter;
 
                            qoldinit = 1//10^4,
 
-                           sigmarule=:dynamics,
+                           sigmarule=:dynamic,
 
                            progressbar=false,
                            maxiters=1e5,
