@@ -7,7 +7,11 @@ This repo contains the code which was used to compute the results of the paper "
 
 __To solve differential equations in Julia with probabilistic numerical solvers, please use
 [ODEFilters.jl](https://github.com/nathanaelbosch/ODEFilters.jl)!__<br />
-It is under active development, contains more features, and the DE solvers it provides are compatible with the
+The code in this repository is not meant to be used as generic ODE solvers, whereas
+[ODEFilters.jl](https://github.com/nathanaelbosch/ODEFilters.jl)
+is a Julia package under active development.
+It is more stable and documented, its solvers are more efficent, and it contains more features.
+The DE solvers it provides are compatible with the
 [DifferentialEquations.jl](https://docs.sciml.ai/stable/)
 ecosystem.
 
