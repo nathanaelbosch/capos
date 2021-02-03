@@ -17,9 +17,9 @@ A __Python__ implementation of these solvers, as well as of additional probabili
 
 
 ## Usage
-The actual solvers are all implemented in `./src`, and the experiments can be found in `./experiments`.
+The experiments can be found in `./experiments`, and the actual solvers are implemented in `./src`.
 To start, open a Julia console with `julia --project=.`.
-Then, you can run experiments with, e.g., `include(experiments/1 Stiff Van der Pol/main.jl)`.
+You can then run the experiments with, e.g., `include(experiments/1 Stiff Van der Pol/main.jl)`.
 
 
 ## Reference
