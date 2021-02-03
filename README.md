@@ -1,4 +1,4 @@
-# Code for: "Calibrated Adaptive Probabilistic ODE Solvers"
+# Calibrated Adaptive Probabilistic ODE Solvers - Code
 
 This repo contains the code which was used to compute the results of the paper "Calibrated Adaptive Probabilistic ODE Solvers", currently published in
 [arXiv](https://arxiv.org/abs/2012.08202).
