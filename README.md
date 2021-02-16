@@ -1,7 +1,13 @@
 # Calibrated Adaptive Probabilistic ODE Solvers - Code
 
+<p>
+  <img src="figures/solution.svg" width="400">
+  <img src="figures/samples.svg" width="400">
+</p>
+
 This repo contains the code which was used to compute the results of the paper "Calibrated Adaptive Probabilistic ODE Solvers", currently published in
 [arXiv](https://arxiv.org/abs/2012.08202).
+
 
 ---
 
