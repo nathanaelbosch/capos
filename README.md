@@ -34,12 +34,18 @@ You can then run the experiments with, e.g., `include(experiments/1 Stiff Van de
 
 ## Reference
 ```
-@misc{bosch2020calibrated,
-      title={Calibrated Adaptive Probabilistic ODE Solvers},
-      author={Nathanael Bosch and Philipp Hennig and Filip Tronarp},
-      year={2020},
-      eprint={2012.08202},
-      archivePrefix={arXiv},
-      primaryClass={math.NA}
+@InProceedings{pmlr-v130-bosch21a,
+  title = 	     { Calibrated Adaptive Probabilistic ODE Solvers },
+  author =       {Bosch, Nathanael and Hennig, Philipp and Tronarp, Filip},
+  booktitle = 	 {Proceedings of The 24th International Conference on Artificial Intelligence and Statistics},
+  pages = 	     {3466--3474},
+  year = 	     {2021},
+  editor = 	     {Banerjee, Arindam and Fukumizu, Kenji},
+  volume = 	     {130},
+  series = 	     {Proceedings of Machine Learning Research},
+  month = 	     {13--15 Apr},
+  publisher =    {PMLR},
+  pdf = 	     {http://proceedings.mlr.press/v130/bosch21a/bosch21a.pdf},
+  url = 	     {http://proceedings.mlr.press/v130/bosch21a.html},
 }
 ```
