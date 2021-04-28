@@ -5,17 +5,14 @@
   <img src="figures/samples.svg" width="400">
 </p>
 
-This repo contains the code which was used to compute the results of the paper "Calibrated Adaptive Probabilistic ODE Solvers", currently published in
-[arXiv](https://arxiv.org/abs/2012.08202).
+This repo contains the code which was used to compute the results of the paper "Calibrated Adaptive Probabilistic ODE Solvers", presented at AISTATS 2021 ([link](http://proceedings.mlr.press/v130/bosch21a.html)).
 
 
 ---
 
 __To solve differential equations in Julia with probabilistic numerical solvers, please use
 [ProbNumDiffEq.jl](https://github.com/nathanaelbosch/ProbNumDiffEq.jl)!__<br />
-The code in this repository is not meant to be used as generic ODE solvers, whereas
-[ProbNumDiffEq.jl](https://github.com/nathanaelbosch/ProbNumDiffEq.jl)
-is a Julia package under active development.
+The code in this repository is not meant to be used as generic ODE solvers, whereas ProbNumDiffEq.jl is a Julia package under active development.
 It is more stable and documented, its solvers are more efficent, and it contains more features.
 The DE solvers it provides are compatible with the
 [DifferentialEquations.jl](https://docs.sciml.ai/stable/)
